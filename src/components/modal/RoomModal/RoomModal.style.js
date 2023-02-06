@@ -1,0 +1,25 @@
+import {StyleSheet, Dimensions} from 'react-native';
+
+const deviceSize = Dimensions.get('window');
+
+export default StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+    padding: 10,
+    marginHorizontal: 2,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    height: deviceSize.height / 3,
+  },
+  input_container: {
+    flex: 2,
+  },
+  button_container: {
+    flex: 1,
+  },
+  button: {},
+  modal: {
+    justifyContent: 'flex-end',
+    margin: 0,
+  },
+});
